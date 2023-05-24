@@ -26,7 +26,7 @@ export default function Trial() {
   }
 
   return (
-    <div className="grid place-items-center m-auto shadow-lg w-[88%] translate-y-[-5rem] bg-white">
+    <div className="grid gap-8 place-items-center m-auto shadow-lg w-[88%] translate-y-[-5rem] bg-white py-9 tracking-wider text-[#858fad]">
       <h2 className="uppercase text-[0.8125rem] font-extrabold">
         {pageviews < 1000000 ? `${pageviews / 1000}k ` : `1M `}Pageviews
       </h2>
@@ -37,14 +37,14 @@ export default function Trial() {
         defaultValue="3"
         handleOnChange={handleChange}
       />
-      <p>
-        <span>${price * multiplier}</span> /month
+      <p className="flex items-center gap-2 text-sm mt-1.5">
+        <span className="text-3xl font-extrabold text-[#293356]">${(price * multiplier).toFixed(2)}</span> /month
       </p>
-      <div className="flex gap-1">
+      <div className="flex gap-1 text-xs relative">
         Monthly Billing 
         <Toggle togglePrice={togglePlan} />
         Yearly Billing 
-        <span>25% discount</span>
+        <span className="absolute">25% discount</span>
       </div>
       <ul>
         <li className="flex items-center gap-1">
