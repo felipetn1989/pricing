@@ -1,0 +1,24 @@
+{
+  "plans": {
+    "1": {
+      "pageviews": 10000,
+      "price": 8
+    },
+    "2": {
+      "pageviews": 50000,
+      "price": 12
+    },
+    "3": {
+      "pageviews": 100000,
+      "price": 16
+    },
+    "4": {
+      "pageviews": 500000,
+      "price": 24
+    },
+    "5": {
+      "pageviews": 1000000,
+      "price": 36
+    }
+  }
+}

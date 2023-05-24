@@ -1,0 +1,9 @@
+.background {
+  background-color: #f1f5fe;
+  background-image: url("../../images/pattern-circles.svg"),
+    url("../../images/bg-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, bottom left;
+  background-position-y: 35%, 100%;
+  background-size: 9.125rem, contain;
+}
