@@ -26,8 +26,8 @@ export default function Trial() {
   }
 
   return (
-    <div className="grid place-items-center">
-      <h2 className="uppercase">
+    <div className="grid place-items-center m-auto shadow-lg w-[88%] translate-y-[-5rem] bg-white">
+      <h2 className="uppercase text-[0.8125rem] font-extrabold">
         {pageviews < 1000000 ? `${pageviews / 1000}k ` : `1M `}Pageviews
       </h2>
       <Range
