@@ -1,3 +1,5 @@
+import styles from '../buttons/Range.module.css'
+
 export default function Range({
   name,
   min,
@@ -7,6 +9,7 @@ export default function Range({
 }) {
   return (
     <input
+      className={`w-[17.5rem] h-5 cursor-pointer ${styles}`}
       type="range"
       name={name}
       id={name}

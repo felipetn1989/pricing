@@ -1,0 +1,6 @@
+input[type="range"]::-moz-range-track,
+input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #f0a500 0%, #f0a500 calc(100% - 5px), #10d5c2 calc(100% - 5px), #10d5c2 100%);
+    border-radius: 9999px;
+    height: 0.5rem;
+}
