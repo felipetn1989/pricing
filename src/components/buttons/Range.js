@@ -1,4 +1,4 @@
-import styles from '../buttons/Range.module.css'
+import styles from "../buttons/Range.module.css";
 
 export default function Range({
   name,

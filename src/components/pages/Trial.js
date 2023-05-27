@@ -37,18 +37,18 @@ export default function Trial() {
         defaultValue="3"
         handleOnChange={handleChange}
       />
-      <p className="flex items-center gap-2 text-sm mt-1.5">
+      <p className="flex items-center gap-3 text-sm mt-1">
         <span className="text-3xl font-extrabold text-[#293356]">
           ${(price * multiplier).toFixed(2)}
         </span>{" "}
         {multiplier === 9 ? "/year" : "/month"}
       </p>
-      <div className="flex gap-1 text-[0.6875rem] relative mt-2 mb-1">
+      <div className="flex items-center gap-3 text-[0.75rem] relative mt-1 mb-2 font-extrabold tracking-tight translate-x-[-0.375rem]">
         Monthly Billing
         <Toggle togglePrice={togglePlan} />
         Yearly Billing
-        <span className="absolute right-[-2rem]">
-          25% <span className="hidden">discount</span>
+        <span className="absolute right-[-2.6875rem] bg-[#feece7] text-[#ff8c66] text-[0.625rem] py-0.5 px-2 rounded-full">
+          -25% <span className="hidden">discount</span>
         </span>
       </div>
       <ul className="flex flex-col gap-2.5 border-t w-full text-[0.6875rem] tracking-wider">
